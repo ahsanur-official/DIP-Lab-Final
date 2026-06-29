@@ -1,0 +1,281 @@
+[
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "img1",
+        "kind": 5,
+        "importPath": "addsub",
+        "description": "addsub",
+        "peekOfCode": "img1 = cv2.imread(\"image1.jpg\")\nimg2 = cv2.imread(\"image2.jpg\")\n# Resize if needed\nimg2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\n# Addition\nadd = cv2.add(img1, img2)\n# Subtraction\nsub = cv2.subtract(img1, img2)\ncv2.imshow(\"Image 1\", img1)\ncv2.imshow(\"Image 2\", img2)",
+        "detail": "addsub",
+        "documentation": {}
+    },
+    {
+        "label": "img2",
+        "kind": 5,
+        "importPath": "addsub",
+        "description": "addsub",
+        "peekOfCode": "img2 = cv2.imread(\"image2.jpg\")\n# Resize if needed\nimg2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\n# Addition\nadd = cv2.add(img1, img2)\n# Subtraction\nsub = cv2.subtract(img1, img2)\ncv2.imshow(\"Image 1\", img1)\ncv2.imshow(\"Image 2\", img2)\ncv2.imshow(\"Addition\", add)",
+        "detail": "addsub",
+        "documentation": {}
+    },
+    {
+        "label": "img2",
+        "kind": 5,
+        "importPath": "addsub",
+        "description": "addsub",
+        "peekOfCode": "img2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\n# Addition\nadd = cv2.add(img1, img2)\n# Subtraction\nsub = cv2.subtract(img1, img2)\ncv2.imshow(\"Image 1\", img1)\ncv2.imshow(\"Image 2\", img2)\ncv2.imshow(\"Addition\", add)\ncv2.imshow(\"Subtraction\", sub)\ncv2.waitKey(0)",
+        "detail": "addsub",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 5,
+        "importPath": "addsub",
+        "description": "addsub",
+        "peekOfCode": "add = cv2.add(img1, img2)\n# Subtraction\nsub = cv2.subtract(img1, img2)\ncv2.imshow(\"Image 1\", img1)\ncv2.imshow(\"Image 2\", img2)\ncv2.imshow(\"Addition\", add)\ncv2.imshow(\"Subtraction\", sub)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "addsub",
+        "documentation": {}
+    },
+    {
+        "label": "sub",
+        "kind": 5,
+        "importPath": "addsub",
+        "description": "addsub",
+        "peekOfCode": "sub = cv2.subtract(img1, img2)\ncv2.imshow(\"Image 1\", img1)\ncv2.imshow(\"Image 2\", img2)\ncv2.imshow(\"Addition\", add)\ncv2.imshow(\"Subtraction\", sub)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "addsub",
+        "documentation": {}
+    },
+    {
+        "label": "img_color",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "img_color = cv2.imread(\"image.png\")\nimg = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)\nL = 256\n# Histogram\nhist = np.zeros(L)\nfor p in img.flatten():\n    hist[p] += 1\n# Histogram Equalization\ncdf = np.cumsum(hist / img.size)\nequalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "img = cv2.cvtColor(img_color, cv2.COLOR_BGR2GRAY)\nL = 256\n# Histogram\nhist = np.zeros(L)\nfor p in img.flatten():\n    hist[p] += 1\n# Histogram Equalization\ncdf = np.cumsum(hist / img.size)\nequalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]\n# Display",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "L",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "L = 256\n# Histogram\nhist = np.zeros(L)\nfor p in img.flatten():\n    hist[p] += 1\n# Histogram Equalization\ncdf = np.cumsum(hist / img.size)\nequalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]\n# Display\nplt.figure(figsize=(12, 8))",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "hist",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "hist = np.zeros(L)\nfor p in img.flatten():\n    hist[p] += 1\n# Histogram Equalization\ncdf = np.cumsum(hist / img.size)\nequalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]\n# Display\nplt.figure(figsize=(12, 8))\nplt.subplot(221)\nplt.imshow(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB))",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "cdf",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "cdf = np.cumsum(hist / img.size)\nequalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]\n# Display\nplt.figure(figsize=(12, 8))\nplt.subplot(221)\nplt.imshow(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB))\nplt.subplot(222)\nplt.hist(img.flatten(), 256)\nplt.subplot(223)\nplt.imshow(equalized, cmap=\"gray\")",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "equalized",
+        "kind": 5,
+        "importPath": "exam",
+        "description": "exam",
+        "peekOfCode": "equalized = np.round((L - 1) * cdf).astype(\"uint8\")[img]\n# Display\nplt.figure(figsize=(12, 8))\nplt.subplot(221)\nplt.imshow(cv2.cvtColor(img_color, cv2.COLOR_BGR2RGB))\nplt.subplot(222)\nplt.hist(img.flatten(), 256)\nplt.subplot(223)\nplt.imshow(equalized, cmap=\"gray\")\nplt.subplot(224)",
+        "detail": "exam",
+        "documentation": {}
+    },
+    {
+        "label": "img1",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "img1 = cv2.imread(\"himel.jpg\")\nimg2 = cv2.imread(\"himel2.jpg\")\nimg2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\ng = img1.astype(int) + img2.astype(int)\ng = np.clip(g, 0, 255).astype(np.uint8)\ncrimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "img2",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "img2 = cv2.imread(\"himel2.jpg\")\nimg2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\ng = img1.astype(int) + img2.astype(int)\ng = np.clip(g, 0, 255).astype(np.uint8)\ncrimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "img2",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "img2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))\ng = img1.astype(int) + img2.astype(int)\ng = np.clip(g, 0, 255).astype(np.uint8)\ncrimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "g = img1.astype(int) + img2.astype(int)\ng = np.clip(g, 0, 255).astype(np.uint8)\ncrimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "g",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "g = np.clip(g, 0, 255).astype(np.uint8)\ncrimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "crimg",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "crimg = g\nimg = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "img = cv2.cvtColor(crimg, cv2.COLOR_BGR2GRAY)\nl = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)\nplt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "l",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "l = 256\nhist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)\nplt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))\nplt.subplot(233)",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "hist",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "hist = np.zeros(l)\nfor p in img.flatten():\n    hist[p] += 1\ncdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)\nplt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))\nplt.subplot(233)\nplt.imshow(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "cdf",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "cdf = np.cumsum(hist / img.size)\nequilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)\nplt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))\nplt.subplot(233)\nplt.imshow(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))\nplt.subplot(234)\nplt.imshow(cv2.cvtColor(crimg, cv2.COLOR_BGR2RGB))\nplt.subplot(235)",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "equilize",
+        "kind": 5,
+        "importPath": "exam2",
+        "description": "exam2",
+        "peekOfCode": "equilize = np.round((l - 1) * cdf).astype(np.uint8)[img]\nplt.figure(figsize=[12, 8])\nplt.subplot(232)\nplt.imshow(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))\nplt.subplot(233)\nplt.imshow(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))\nplt.subplot(234)\nplt.imshow(cv2.cvtColor(crimg, cv2.COLOR_BGR2RGB))\nplt.subplot(235)\nplt.hist(img.flatten(), 256)",
+        "detail": "exam2",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "gaussian",
+        "description": "gaussian",
+        "peekOfCode": "img = cv2.imread(\"image.jpg\")\n# Gaussian Blur\ngaussian = cv2.GaussianBlur(img, (5, 5), 0)\ncv2.imshow(\"Original\", img)\ncv2.imshow(\"Gaussian Filter\", gaussian)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "gaussian",
+        "documentation": {}
+    },
+    {
+        "label": "gaussian",
+        "kind": 5,
+        "importPath": "gaussian",
+        "description": "gaussian",
+        "peekOfCode": "gaussian = cv2.GaussianBlur(img, (5, 5), 0)\ncv2.imshow(\"Original\", img)\ncv2.imshow(\"Gaussian Filter\", gaussian)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "gaussian",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "histogram",
+        "description": "histogram",
+        "peekOfCode": "img = cv2.imread(\"image.jpg\", 0)\n# Show image\nplt.imshow(img, cmap=\"gray\")\nplt.title(\"Original Image\")\nplt.axis(\"off\")\nplt.show()\n# Histogram\nplt.hist(img.ravel(), 256, [0, 256])\nplt.title(\"Histogram\")\nplt.xlabel(\"Pixel Value\")",
+        "detail": "histogram",
+        "documentation": {}
+    },
+    {
+        "label": "img",
+        "kind": 5,
+        "importPath": "sharpen",
+        "description": "sharpen",
+        "peekOfCode": "img = cv2.imread(\"image.jpg\")\nkernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])\nsharp = cv2.filter2D(img, -1, kernel)\ncv2.imshow(\"Original\", img)\ncv2.imshow(\"Sharpen Image\", sharp)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "sharpen",
+        "documentation": {}
+    },
+    {
+        "label": "kernel",
+        "kind": 5,
+        "importPath": "sharpen",
+        "description": "sharpen",
+        "peekOfCode": "kernel = np.array([[0, -1, 0], [-1, 5, -1], [0, -1, 0]])\nsharp = cv2.filter2D(img, -1, kernel)\ncv2.imshow(\"Original\", img)\ncv2.imshow(\"Sharpen Image\", sharp)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "sharpen",
+        "documentation": {}
+    },
+    {
+        "label": "sharp",
+        "kind": 5,
+        "importPath": "sharpen",
+        "description": "sharpen",
+        "peekOfCode": "sharp = cv2.filter2D(img, -1, kernel)\ncv2.imshow(\"Original\", img)\ncv2.imshow(\"Sharpen Image\", sharp)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "sharpen",
+        "documentation": {}
+    }
+]
