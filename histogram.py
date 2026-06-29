@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # Read image
-img = cv2.imread("image.jpg", 0)
+img = cv2.imread("image.png", 0)
 
 # Show image
 plt.imshow(img, cmap="gray")

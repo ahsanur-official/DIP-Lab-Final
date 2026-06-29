@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-img1 = cv2.imread("himel.jpg")
-img2 = cv2.imread("himel2.jpg")
+img1 = cv2.imread("image.png")
+img2 = cv2.imread("image2.png")
 img2 = cv2.resize(img2, (img1.shape[1], img1.shape[0]))
 g = img1.astype(int) + img2.astype(int)
 

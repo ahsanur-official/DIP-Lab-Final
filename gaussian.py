@@ -1,7 +1,7 @@
 import cv2
 
 # Read image
-img = cv2.imread("image.jpg")
+img = cv2.imread("image.png")
 
 # Gaussian Blur
 gaussian = cv2.GaussianBlur(img, (5, 5), 0)
